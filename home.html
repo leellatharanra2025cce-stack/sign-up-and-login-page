@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart - Online Grocery Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    header {
+      background: #0099ff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .logout-btn {
+      background: white;
+      color: #0099ff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      float: right;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    .logout-btn:hover {
+      background: #e0f4ff;
+    }
+    .shop-container {
+      width: 90%;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product button {
+      margin-top: 10px;
+      width: 100%;
+      background: #00c2ff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background: #0099ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    <h1>🛒 FreshMart Grocery Store</h1>
+  </header>
+
+  <div class="shop-container">
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/honey-1239343_1280.jpg" alt="Honey">
+      <h3>Natural Honey</h3>
+      <p>₹250 / 500ml</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/rice-1239345_1280.jpg" alt="Rice">
+      <h3>Organic Rice</h3>
+      <p>₹120 / kg</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2016/07/11/20/32/tomatoes-1519042_1280.jpg" alt="Tomatoes">
+      <h3>Fresh Tomatoes</h3>
+      <p>₹40 / kg</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/apples-1205620_1280.jpg" alt="Apples">
+      <h3>Red Apples</h3>
+      <p>₹150 / kg</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
